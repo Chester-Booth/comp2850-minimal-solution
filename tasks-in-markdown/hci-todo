@@ -1,0 +1,38 @@
+1. interview 2 people abbout task managers
+	- note responses, observatiions, themes
+
+- list situations where people struggled & what they need
+
+- write job stories (4-6)
+	- situation      (when i'm..)
+	- motivation     (i want..)
+	- outcome        (so i can..)
+	- underlying need(because... ) 
+
+	- evidence from interviews
+	- inclusion risk
+	- wcag (atlease 2)
+
+
+2.  create pilot study tasks (2-5)
+	- scenario (you've been asked to)
+	- setup (pre pop list)
+	- success criteria (participant uses, completed within)
+	- metrics (time from page load to.., completed?, valid. errors, confidence )
+	- accessibility checks (No-JS, keyboard only)
+	- link to job stories(?)
+
+3. define metrics
+	- objective metrics (define,calc,reporting+eg.,split by)
+	- subjective metrics(define,scale,collection method,reporting+eg)
+	- accessibility metrics(define,measurement,reporting)
+
+4. perform pilot study 
+	- (consent process,set expectations)
+	- "warm up"
+	- read scenario, start timing, observe,
+	- post tasks question (record confidence, notes, complete?)
+	- debreif (what difficult,surprise,unsure, accessibility(if applic))
+	- data recorded (metrics.csv) and manual in (pilot-notes.md)
+
+5. week 10 analysis and fixes then interview again

@@ -1,0 +1,277 @@
+{
+  "main": {
+    "id": "532f79235bdd9093",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a7fc5b826a8aea0",
+        "type": "tabs",
+        "dimension": 55.36770921386306,
+        "children": [
+          {
+            "id": "0ca14bb1747fc56f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/pilot-protocol.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pilot-protocol"
+            }
+          },
+          {
+            "id": "8a4f3e04fb0a24ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/pilot-notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pilot-notes"
+            }
+          },
+          {
+            "id": "93a64c3419054647",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Interview-consent-protocol.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Interview-consent-protocol"
+            }
+          },
+          {
+            "id": "596b948cbb7480a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Interview-backlog.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Interview-backlog"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "2c07b2e40f2eb151",
+        "type": "tabs",
+        "dimension": 44.63229078613694,
+        "children": [
+          {
+            "id": "d4adaa49a6d66c0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Interview-notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Interview-notes"
+            }
+          },
+          {
+            "id": "a3c6b9ad5db01265",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/pilot-protocol-tasks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pilot-protocol-tasks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bf04fdd0054ca525",
+    "type": "split",
+    "children": [
+      {
+        "id": "f64db6540b66daf2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "67bbf3080458610b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ea192e0b85a01ccb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cook",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "83ee88c6e8e46988",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "76884e1cc06dd39b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4278051182fbf42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "534a418764abdde7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "research/pilot-notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for pilot-notes"
+            }
+          },
+          {
+            "id": "d40363e6a64124a3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "research/pilot-notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from pilot-notes"
+            }
+          },
+          {
+            "id": "1c099f6727645133",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4c9815d1bc31651d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "428b2104ec361f0e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "research/pilot-notes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of pilot-notes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "8a4f3e04fb0a24ef",
+  "lastOpenFiles": [
+    "research/pilot-protocol.md",
+    "research/pilot-notes.md",
+    "research/Interview-notes.md",
+    "research/Interview-backlog.md",
+    "research/portfolio.md",
+    "research/pilot-protocol-tasks.md",
+    "research/Interview-consent-protocol.md",
+    "hci-todo",
+    "hci-portfolio-info"
+  ]
+}

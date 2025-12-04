@@ -1,0 +1,39 @@
+To support you with the portfolio task, we have now provided a basic version of the
+webapp which has all the required features - if you haven't been able to get your
+code working, you can use this to run your pilot study. It is linked in the
+Portfolio - Support document, which also contains templates for submission 
+(in two formats: you only need to complete one of them). 
+You need to fork this code in order to access the metrics and make changes.
+
+In addition, there is a basic checklist which gives all of the components of planning
+and running your pilot study - this might be useful if you're still struggling to get
+started.
+
+This isn't a replacement for understanding the code, and you do need to spend time 
+looking through the notes if you have not already - next semester we will do a quick
+intro to setting up your own web apps but we will assume some level of basic
+familiarity.
+
+
+The full specification of the portfolio task is given in the HCI book and you should 
+refer to this as it has the full instructions, including some useful details about 
+what you need to submit for evidence and links to different parts of the notes 
+related to each section.
+
+
+Your evidence and write up should be uploaded to Gradescope, 
+with a suggested deadline of the 5th December and a final late deadline of the 12th. Unlike the Wordle task, you do not need to have this marked in labs.
+
+
+## WEEK 9 EVALUATION TIPS
+
+Before each pilot:
+1. Clear browser cookies (or use incognito)
+2. Set session ID: document.cookie = "sid=P1_7a9f; path=/"
+3. Start from: http://localhost:8080/tasks
+4. Check logs appear in: data/metrics.csv
+
+
+- need job stories
+	- for evaulation tasks
+- consent script
