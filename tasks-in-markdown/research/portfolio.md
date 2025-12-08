@@ -206,7 +206,7 @@ In this section you will select and explain up to three fixes you will be making
 These should be high priority findings, particularly those with WCAG Level A issues.
 
 
-#### Fix
+#### Fix 1
 
 Finding: Status Messages too small
 
@@ -221,12 +221,60 @@ link the existing custom css file (that contains styles for #status) to the `<he
 | ----- | ---------------------- | --------------------- |
 | info  | ![[status_before.png]] | ![[status_fixed.png]] |
 | error | ![[error_before.png]]  | ![[error_fixed.png]]  |
+Finding: Status Messages too small
 
+Explanation: the status messages would display as regular text on the same background as the rest of the content, making it hard to identify when status messages appear
+
+Original Code: N/A ( lack of code was the issue )
+
+#### Fix 2:
+Finding: Error in parsing tasks.csv not caught
+
+Explanation:  if the tasks.csv had its trailing newline removed, then the following task would be not able to be parsed and rendered on the screen
+
+Original Code: N/A ( lack of code was the issue )
+
+Fix: 
+when parsing the tasks.csv, check if the file ends with a '\n' byte and if it doesn't append one.
 
 Final Code: 
-```pebble
-{# Add custom stylesheets #}  
-<link rel="stylesheet" href="/static/css/custom.css">
+```kotlin
+--- a/src/main/kotlin/storage/TaskStore.kt
++++ b/src/main/kotlin/storage/TaskStore.kt
+@@ -63,8 +63,33 @@ class TaskStore(
+      * @return List of tasks (empty if no tasks stored)
+      */
+     fun getAll(): List<Task> {
++
+         if (!csvFile.exists() || csvFile.length() == EMPTY_FILE_SIZE) return emptyList()
+ 
++
++        // ensure file ends with newline to avoid malformed task lines
++        try {
++            java.io.RandomAccessFile(csvFile, "rw").use { raf ->
++
++                // goto final byte and read
++                raf.seek(csvFile.length() - 1)
++                val lastByte = raf.read()
++
++                // check for trailing newline
++                if (lastByte.toChar() != '\n') {
++                    System.err.println("Warning: CSV missing trailing newline")
++
++                    // go past final byte and write \n
++                    raf.seek(csvFile.length())
++                    raf.write('\n'.code)
++                }
++            }
++
++        } catch (e: Exception) {
++            System.err.println("Warning: could not ensure trailing newline: ${e.message}")
++        }
++
++
+         return FileReader(csvFile).use { reader ->
+             CSVParser(reader, CSV_FORMAT).use { parser ->
+                 parser.mapNotNull { record ->
 ```
 
 ## WCAG Checklist
@@ -291,13 +339,19 @@ Expert participant with keyboard and mouse with js
 
 4. were they useful?
 ##### Metrics:
-*Copy here from metrics.csv, or link to the location of this participant’s pilot study log.*
+```metrics.csv
+```
 
+| Task | Completed | Time Taken (m:s:ms) | Confidence | Reasoning | Notes |
+| ---- | --------- | ------------------- | ---------- | --------- | ----- |
+| 1    |           |                     |            |           |       |
+| 2    |           |                     |            |           |       |
+| 3    |           |                     |            |           |       |
+| 4    |           |                     |            |           |       |
 
 #### Participant 2
 ##### Details of Participant:
-
-*How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.*
+Expert participant in keyboard only, with js
 
 ##### Notes:
 ###### Debrief 
@@ -310,8 +364,15 @@ Expert participant with keyboard and mouse with js
 4. were they useful?
 
 ##### Metrics:
-*Copy here from metrics.csv, or link to the location of this participant’s pilot study log.* 
+```metrics.csv
+```
 
+| Task | Completed | Time Taken (m:s:ms) | Confidence | Reasoning | Notes |
+| ---- | --------- | ------------------- | ---------- | --------- | ----- |
+| 1    |           |                     |            |           |       |
+| 2    |           |                     |            |           |       |
+| 3    |           |                     |            |           |       |
+| 4    |           |                     |            |           |       |
 ### Metrics Breakdown - Study 2
 
 | Task | Target Time | Mean Time | Median Time | Range of Times | Target - Mean |
