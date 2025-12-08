@@ -282,30 +282,30 @@ Once you have made your code changes and tested the site yourself, you should wo
 
 Be honest – if you have not met a criterion, you can explain why in the next section.
 
-| Check               | Criterion                             | Level | Pass/Fail?      | Notes                                   |
-| ------------------- | ------------------------------------- | ----- | --------------- | --------------------------------------- |
-| **Keyboard**        |                                       |       |                 |                                         |
-| K1                  | 2.1.1 All actions keyboard accessible | A     | [pass/fail]     | e.g., "Tested Tab/Enter on all buttons" |
-| K2                  | 2.4.7 Focus visible                   | AA    | [pass/fail]     |                                         |
-| K3                  | No keyboard traps                     | A     | [pass/fail]     |                                         |
-| K4                  | Logical tab order                     | A     | [pass/fail]     |                                         |
-| K5                  | Skip links present                    | AA    | [pass/fail/n/a] |                                         |
-| **Forms**           |                                       |       |                 |                                         |
-| F1                  | 3.3.2 Labels present                  | A     | [pass/fail]     |                                         |
-| F2                  | 3.3.1 Errors identified               | A     | [pass/fail]     |                                         |
-| F3                  | 4.1.2 Name/role/value                 | A     | [pass/fail]     |                                         |
-| **Dynamic Content** |                                       |       |                 |                                         |
-| D1                  | 4.1.3 Status messages                 | AA    | [pass/fail]     |                                         |
-| D2                  | Live regions work                     | AA    | [pass/fail]     |                                         |
-| D3                  | Focus management                      | A     | [pass/fail]     |                                         |
-| **No-JS**           |                                       |       |                 |                                         |
-| V1                  | 1.4.3 Contrast minimum                | AA    | [pass/fail]     |                                         |
-| V2                  | 1.4.4 Resize text                     | AA    | [pass/fail]     |                                         |
-| V3                  | 1.4.11 Non-text contrast              | AA    | [pass/fail]     |                                         |
-| **Semantic**        |                                       |       |                 |                                         |
-| S1                  | 1.3.1 Headings hierarchy              | A     | [pass/fail]     |                                         |
-| S2                  | 2.4.1 Bypass blocks                   | A     | [pass/fail]     |                                         |
-| S3                  | 1.1.1 Alt text                        | A     | [pass/fail]     |                                         |
+| Check               | Criterion                             | Level | Pass/Fail?  | Notes                                                                                         |
+| ------------------- | ------------------------------------- | ----- | ----------- | --------------------------------------------------------------------------------------------- |
+| **Keyboard**        |                                       |       |             |                                                                                               |
+| K1                  | 2.1.1 All actions keyboard accessible | A     | [pass]      | "tested tab and enter on all buttons,links,inputs"                                            |
+| K2                  | 2.4.7 Focus visible                   | AA    | [pass]      |                                                                                               |
+| K3                  | No keyboard traps                     | A     | [pass]      | "tested every functionality of the app with keyboard"                                         |
+| K4                  | Logical tab order                     | A     | [pass]      | "tabs go left to right, top to bottom, which is expected for the English content on the page" |
+| K5                  | Skip links present                    | AA    | [pass]      |                                                                                               |
+| **Forms**           |                                       |       |             |                                                                                               |
+| F1                  | 3.3.2 Labels present                  | A     | [pass]      |                                                                                               |
+| F2                  | 3.3.1 Errors identified               | A     | [pass]      |                                                                                               |
+| F3                  | 4.1.2 Name/role/value                 | A     | [pass]      | ""                                                                                            |
+| **Dynamic Content** |                                       |       |             |                                                                                               |
+| D1                  | 4.1.3 Status messages                 | AA    | [pass]      | "tested error and info status messages"                                                       |
+| D2                  | Live regions work                     | AA    | [pass]      | "aria-live and role alert used on status messages"                                            |
+| D3                  | Focus management                      | A     | [pass]      |                                                                                               |
+| **No-JS**           |                                       |       |             |                                                                                               |
+| V1                  | 1.4.3 Contrast minimum                | AA    | [pass]      | "tested all text locations using devtools"                                                    |
+| V2                  | 1.4.4 Resize text                     | AA    | [pass]      |                                                                                               |
+| V3                  | 1.4.11 Non-text contrast              | AA    | [pass/fail] | "tested all controls using devtools"                                                          |
+| **Semantic**        |                                       |       |             |                                                                                               |
+| S1                  | 1.3.1 Headings hierarchy              | A     | [pass]      |                                                                                               |
+| S2                  | 2.4.1 Bypass blocks                   | A     | [n/a]       | "there is no repeated content on multtiple webpages"                                          |
+| S3                  | 1.1.1 Alt text                        | A     | [pass/fail] |                                                                                               |
 
 #### Any Missing Criteria
 If you did not meet any criteria, please note the number of the criteria (e.g. K2) and a brief (1-2 sentence) explanation of how you are not currently meeting it and a quick explanation of how you could address this.
@@ -318,10 +318,9 @@ Example with an alternative WCAG criterion:
 You will re-run your pilot with 1-2 participants in order to evidence whether your changes improved the site.
 
 | Participant Number | Read consent script to the participant? | Date and time that consent was given: |
-|--------------------|----------------------------------------|---------------------------------------|
-| EXAMPLE            | X                                      | 20/11/2025 11:15                     |
-| P1                 |                                        |                                       |
-| P2                 |                                        |                                       |
+| ------------------ | --------------------------------------- | ------------------------------------- |
+| P1                 | X                                       | 4:17PM  8-12-2025                     |
+| P2                 |                                         |                                       |
 
 
 #### Participant 1
@@ -332,22 +331,23 @@ Expert participant with keyboard and mouse with js
 
 ###### Debrief 
 1. was there anything that was a surprise or did not work as intended? 
-
+"no"
 2. was there any task you weren't sure if you has completed successfully?
-
+"no"
 3.  were you aware of the status messages sent throughout the pilot?
-
+"yes, definitely."
 4. were they useful?
+"yes"
 ##### Metrics:
 ```metrics.csv
 ```
 
-| Task | Completed | Time Taken (m:s:ms) | Confidence | Reasoning | Notes |
-| ---- | --------- | ------------------- | ---------- | --------- | ----- |
-| 1    |           |                     |            |           |       |
-| 2    |           |                     |            |           |       |
-| 3    |           |                     |            |           |       |
-| 4    |           |                     |            |           |       |
+| Task | Completed | Time Taken (m:s:ms) | Confidence | Reasoning                                                                    | Notes |
+| ---- | --------- | ------------------- | ---------- | ---------------------------------------------------------------------------- | ----- |
+| 1    | yes       | 0:8:40              | 10/10      | "because i can see it visible and its way more obvious at the top"           |       |
+| 2    | yes       | 0:12:40             | 10/10      | "because i can immediately see the changes and its[status] more obvious "    |       |
+| 3    | yes       | 0:08:48             | 10/10      | "because i see the 3 tasks status notification "                             |       |
+| 4    | yes       | 0:09:08             | 10/10      | "because i can scale it using the universal shortcut and it works perfectly" |       |
 
 #### Participant 2
 ##### Details of Participant:
