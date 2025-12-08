@@ -7,23 +7,14 @@
 - I confirm that all results are real and not fabricated.
 - I confirm this work is my own.
 
-Name:
-Date:
 
 ## Job Stories
-Paste in your job stories here, in the format:
-Story #X
-When [situation/context],
-I want [motivation/capability],
-So [outcome/benefit],
-Because [underlying need].
-You should have 3-6 stories in total. One story may inform more than one pilot study task.
 
 Story #1
 When I'm inputting tasks,
- I want to be able to fix mistakes,
- So I don't have to re-input the task,
- Because it would waste time.
+I want to be able to fix mistakes,
+So I don't have to re-input the task,
+Because it would waste time.
 
 Story #2
 When I'm viewing tasks,
@@ -54,29 +45,24 @@ Action: Empty task list
 Success Criteria: Participant enters task title, Adds Task, Task is visible in list 
 Target Time: ~20 seconds
 Linked to: Story #3
-
 ### Task 2: Edit Task (stopwatch)
 Scenario: "The task 'Complete ecks vee six portfolio' has a misspelling, alter the task to 'Complete XV6 portfolio' and save the updated task."
 Action: task 'Complete ecks vee six portfolio' in list 
 Success Criteria: Participant locates the task, selects edit button, changes task name correctly, Changed task is visible in list
 Target Time: ~1 minute
 Linked to: Story #1, #3
-
 ### Task 3: Filter Task
 Scenario: "You've been asked find all tasks with the word 'complete'. Use the filter to count all tasks that match this criteria, and they say how many tasks meet the criteria "
-Action: several (8) tasks in the list with 3 containing 'complete' 
+Action: several (11) tasks in the list with 3 containing 'complete' 
 Success Criteria:  Participant locates the filter box, inputs search term correctly, counts all visible tasks , says Correct count
 Target Time: ~20 seconds
 Linked to: Story #3 
-
 ### Task 4: Resize Task App (stopwatch)
 Scenario: "You've been asked to alter the task app for usage by someone with a vision impairment. Use the browser to increase the text size and report whether any content does not scale up."
 Action: several tasks in list and browser with zoom functionality (firefox)
-Success Criteria: participant affirms that all content scales up accordingly 
+Success Criteria: participant uses the browser's build in zoom functionality, checks the app, affirms that all content scales up accordingly 
 Target Time: ~3 minutes
 Linked to: Story #4, #3
-
-
 ### Consent Script
 [[pilot-protocol#Consent Process]]
 "Thanks for agreeing to pilot our prototype. This is a quick usability test—about 15 minutes. I'll ask you to complete 4 tasks while I observe and take notes. I'm testing the interface, not you, so there are no wrong answers.
@@ -98,64 +84,121 @@ Linked to: Story #4, #3
  Do you have any questions before we start?"
 
 
-### Participant Consent
+### Participant Consent and Notes
+
 | Participant Number | Read consent script to the participant? | Date and time that consent was given: |
 | ------------------ | --------------------------------------- | ------------------------------------- |
-| EXAMPLE            | X                                       | 20/11/2025 11:15                      |
-| P1                 |                                         |                                       |
-| P2                 |                                         |                                       |
-| P3                 |                                         |                                       |
-| P4                 |                                         |                                       |
+| P1                 | X                                       | 04/12/2025 15:25                      |
+| P2                 | X                                       | 04/12/2025 16:14                      |
+
 
 #### Participant 1
 ##### Details of Participant:
-*How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.*
-
+Keyboard + Mouse with JS
 ##### Notes:
-Copy here, or link the location of this participant’s pilot study notes
+###### Debrief 
+
+1. what was the hardest task to complete?
+"most tasks are easy, the most uncomfortable one is the filter as the layout could be improved by bolding filtered words to indicate \[the filtered term]"
+2. what could be improved about the application?
+"bolding filtered words to indicate \[the filtered term]"
+3. was there anything that was a surprise or did not work as intended? 
+"most of them are fine its just in the beginning the task didn't show up"
+4. was there any task you weren't sure if you has completed successfully?
+"aside from the first task, no, everything works as usual"
 
 ##### Metrics:
-*Copy here from metrics.csv, or link to the location of this participant’s pilot study log.*
+```csv
+2025-12-04T15:35:43.114230486Z,P1_6680fa,r_28b111ca,T1_filter,success,,9,200,on
+2025-12-04T15:35:49.434900361Z,P1_6680fa,r_61da63f9,T0_list,success,,16,200,off
+2025-12-04T15:36:33.251393905Z,P1_6680fa,r_4608535d,T3_add,success,,9,200,on
+2025-12-04T15:36:37.055921185Z,P1_6680fa,r_82a7cfce,T0_list,success,,10,200,off
+2025-12-04T15:38:56.363602029Z,P1_6680fa,r_efbef123,T0_list,success,,16,200,off
+2025-12-04T15:39:10.308132299Z,P1_6680fa,r_ee47fd0b,T0_list,success,,12,200,off
+2025-12-04T15:39:39.015675500Z,P1_6680fa,r_7e5d1d1f,T0_list,success,,20,200,off
+2025-12-04T15:41:25.955715682Z,P1_6680fa,r_ce9a2783,T0_list,success,,24,200,off
+2025-12-04T15:42:18.881959712Z,P1_6680fa,r_37c05fe7,T1_filter,success,,4,200,on
+2025-12-04T15:42:19.398301371Z,P1_6680fa,r_ab682129,T1_filter,success,,7,200,on
+2025-12-04T15:42:19.707410618Z,P1_6680fa,r_1f2e19b9,T1_filter,success,,7,200,on
+2025-12-04T15:42:20.755807161Z,P1_6680fa,r_9e39fddf,T1_filter,success,,7,200,on
+2025-12-04T15:42:21.888600462Z,P1_6680fa,r_09d35c36,T1_filter,success,,12,200,on
+2025-12-04T15:42:22.507690627Z,P1_6680fa,r_64a685bf,T1_filter,success,,7,200,on
+2025-12-04T15:42:24.655869425Z,P1_6680fa,r_0fe2a2e6,T1_filter,success,,10,200,on
+2025-12-04T15:44:07.458617059Z,P1_6680fa,r_fcff6c44,T1_filter,success,,0,200,off
+2025-12-04T15:44:07.477953892Z,P1_6680fa,r_b6eab294,T0_list,success,,17,200,off
+```
+
+| Task | Completed | Time Taken (m:s:ms) | Confidence | Reasoning                                                                                                                                                                                     | Notes                                                                                                    |
+| ---- | --------- | ------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 1    | No        | 1:30:00             | 5/10       | "not quite sure that  the task is visible and there's no category for dates or deadlines"                                                                                                     | The tasks.csv file did not initially have a trailing newline, causing the task addition to silently fail |
+| 2    | Yes       | 0:15:11             | 9/10       | "added quite easily and saves quite quickly"                                                                                                                                                  |                                                                                                          |
+| 3    | Yes       | 0:15:21             | 8/10       | "i'm not sure where but it feels a little bit off and also it is not based on the position of complete, i think it would be better if it sorted everything and highlighted the filtered word" |                                                                                                          |
+| 4    | Yes       | 0:40:64             | 10/10      | "because i tried control plus and it worked after i was unsure if it did"                                                                                                                     | decided to use keyboard shortcut not GUI                                                                 |
 
 #### Participant 2
 ##### Details of Participant:
-*How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.*
-
+Keyboard with JS
 ##### Notes:
-Copy here, or link the location of this participant’s pilot study notes
+
+###### Debrief 
+1. what was the hardest task to complete?
+"none of them were particularly difficult, as they are simple and everything is laid out well"
+2. what could be improved about the application?
+"i would make the task notification more noticeable, as the font is too small and does not stand out as my eyes are not at top left"
+3. was there anything that was a surprise or did not work as intended? 
+"no"
+4. was there any task you weren't sure if you has completed successfully?
+"no"
 
 ##### Metrics:
-*Copy here from metrics.csv, or link to the location of this participant’s pilot study log.*
+```csv
+2025-12-04T16:11:47.498226957Z,P2_22764c,r_0c93590f,T0_list,success,,101,200,off
+2025-12-04T16:11:51.536421758Z,P2_22764c,r_26aa2ce4,T1_filter,success,,10,200,on
+2025-12-04T16:15:18.820255637Z,P2_22764c,r_fd90368d,T3_add,success,,35,200,on
+2025-12-04T16:16:18.414864688Z,P2_22764c,r_05c586d3,T1_filter,success,,1,200,off
+2025-12-04T16:16:18.446356306Z,P2_22764c,r_8c06e390,T0_list,success,,29,200,off
+2025-12-04T16:18:06.319169414Z,P2_22764c,r_95d74580,T0_list,success,,28,200,off
+2025-12-04T16:18:23.568866752Z,P2_22764c,r_bfeaf888,T1_filter,success,,10,200,on
+2025-12-04T16:18:24.118505064Z,P2_22764c,r_2b209ab9,T1_filter,success,,8,200,on
+2025-12-04T16:18:24.616841580Z,P2_22764c,r_25e812d8,T1_filter,success,,7,200,on
+2025-12-04T16:18:25.399263113Z,P2_22764c,r_19d43ff6,T1_filter,success,,9,200,on
+2025-12-04T16:19:00.053334451Z,P2_22764c,r_d888b4b5,T1_filter,success,,16,200,on
+2025-12-04T16:19:18.746064352Z,P2_22764c,r_261477b5,T1_filter,success,,1,200,off
+2025-12-04T16:19:18.780422344Z,P2_22764c,r_bc930d31,T0_list,success,,32,200,off
+```
 
-### Metrics Breakdown
-| Task         | Target Time | Mean Time | Median Time | Range of Times | Target - Mean |
-| ------------ | ----------- | --------- | ----------- | -------------- | ------------- |
-| EXAMPLE TASK | < 10        | 12.7      | 9.3         | 7.6 – 17.3     | -2.7          |
-|              |             |           |             |                |               |
-|              |             |           |             |                |               |
-|              |             |           |             |                |               |
-|              |             |           |             |                |               |
+| Task | Completed | Time Taken (m:s:ms) | Confidence | Reasoning                                                                        | Notes |
+| ---- | --------- | ------------------- | ---------- | -------------------------------------------------------------------------------- | ----- |
+| 1    | Yes       | 0:16:33             | 10/10      | "straightforward"                                                                |       |
+| 2    | Yes       | 0:27:50             | 9/10       | "quite simple, not used to keyboard navigation, takes long to get back to start" |       |
+| 3    | Yes       | 0:06:99             | 10/10      | "filter box is quite visible and you dont have to press apply to see results"    |       |
+| 4    | Yes       | 0:20:96             | 10/10      | "scaling is easy, nothing special by using ctrl plus"                            |       |
 
+### Metrics Breakdown (s)
 
+| Task | Target Time | Mean Time | Range of Times | Target - Mean |
+| ---- | ----------- | --------- | -------------- | ------------- |
+| 1    | < 20        | 16.3      | N/A            | -3.7          |
+| 2    | < 60        | 21.3      | 15.1-27.5      | -38.7         |
+| 3    | < 20        | 11.1      | 6.99-15.21     | -8.9          |
+| 4    | < 180       | 30.1      | 20.1-40.6      | -149.9        |
+
+a keyboard is likely to be more
 #### Reflection / Initial Thoughts
-*Use this space to informally discuss your results, both qualitative and quantitative, and any initial trends which you spotted.*
 
->[!Example]
-Although mouse, keyboard and screen users were able to consistently complete tasks in under the target time, keyboard-only users found it more challenging due to having to move backwards and forwards on the page, leading to significantly higher times for all tasks.*
-> 
-
+Mouse and keyboard users were able to all complete tasks in under the target time, and had similar results throughout the tasks. 
+Although for [[#Task 4]], which was completed by all participants via the usage of a keyboard shortcut, was able to be completed significantly faster by the keyboard user likely due to their familiarity with shortcuts. 
 
 
 ## Findings
 You will now formalise your thoughts, reflections and data gathered from your pilot study into some findings which should be single issues with the site which you have identified from your evidence.
 
-| Finding                                       | Source               | Observation                               | WCAG            | Impact (1-5) | Inclusion (1-5) | Effort (1-5) | Priority (Im + In - E) |
-|-----------------------------------------------|----------------------|-------------------------------------------|-----------------|--------------|-----------------|--------------|------------------------|
-| EXAMPLE Screen reader – errors not announced | metrics.csv L47-49 + P2 notes 14:23 | P2: “I didn’t hear any error”             | 3.3.1 Level A   | 5            | 5               | 3            | 7                      |
-|                                               |                      |                                           |                 |              |                 |              |                        |
-|                                               |                      |                                           |                 |              |                 |              |                        |
-|                                               |                      |                                           |                 |              |                 |              |                        |
-|                                               |                      |                                           |                 |              |                 |              |                        |
+| Finding                               | Source                              | Observation                                                                                                                                                                                      | WCAG           | Impact (1-5) | Inclusion (1-5) | Effort (1-5) | Priority (im + in - E) |
+| ------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | ------------ | --------------- | ------------ | ---------------------- |
+| Status messages too small             | P2 Notes                            | P2:"the font is too small and does not stand out as my eyes are not at top left"                                                                                                                 | 4.1.3 Level AA | 3            | 3               | 1            | 5                      |
+| Filtered words aren't highlighted     | P1 Notes + P1 tasks csv<br>L9-16    | P1:"i'm not sure where but it feels a little bit off and also it is not based on the position of complete, i think it would be better if it sorted everything and highlighted the filtered word" | 4.1.3 Level AA | 1            | 2               | 5            | -2                     |
+| Error in parsing tasks.csv not caught | P1 Notes + P1 tasks csv<br>L3-9<br> | P1:"not quite sure that the task is visible..."                                                                                                                                                  | 3.3.1 Level A  | 5            | 3               | 4            | 4                      |
+
 
 ### Fixes To Implement
 
@@ -163,17 +206,28 @@ In this section you will select and explain up to three fixes you will be making
 These should be high priority findings, particularly those with WCAG Level A issues.
 
 
-#### Fix 1
+#### Fix
 
-Finding: [the finding from the table above]
+Finding: Status Messages too small
 
-Explanation: [explain what the current issue is in simple terms]
+Explanation: the status messages would display as regular text on the same background as the rest of the content, making it hard to identify when status messages appear
 
-Original Code: [paste/screenshot the code which you believe caused this error]
+Original Code: N/A ( lack of code was issue )
 
-Fix: [Explain how you fixed this issue or explain what you did if you cannot work out how to fix the issue in a reasonable amount of time]
+Fix: 
+link the existing custom css file (that contains styles for #status) to the `<head>` 
 
-Final Code: [paste/screenshot the final, edited code of your fix – **if you used generative AI to support your coding you should acknowledge that here**.]
+| Type  | Before                 | After                 |
+| ----- | ---------------------- | --------------------- |
+| info  | ![[status_before.png]] | ![[status_fixed.png]] |
+| error | ![[error_before.png]]  | ![[error_fixed.png]]  |
+
+
+Final Code: 
+```pebble
+{# Add custom stylesheets #}  
+<link rel="stylesheet" href="/static/css/custom.css">
+```
 
 ## WCAG Checklist
 Once you have made your code changes and tested the site yourself, you should work through the WCAG checklist below, recording whether your app passes or fails, with a note stating **why**.
@@ -224,12 +278,18 @@ You will re-run your pilot with 1-2 participants in order to evidence whether yo
 
 #### Participant 1
 ##### Details of Participant:
-
-*How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.*
+Expert participant with keyboard and mouse with js
 
 ##### Notes:
-Copy here, or link the location of this participant’s pilot study notes
 
+###### Debrief 
+1. was there anything that was a surprise or did not work as intended? 
+
+2. was there any task you weren't sure if you has completed successfully?
+
+3.  were you aware of the status messages sent throughout the pilot?
+
+4. were they useful?
 ##### Metrics:
 *Copy here from metrics.csv, or link to the location of this participant’s pilot study log.*
 
@@ -240,7 +300,14 @@ Copy here, or link the location of this participant’s pilot study notes
 *How did this user access the webapp? Keyboard/Mouse/Screenreader/No-JS etc.*
 
 ##### Notes:
-Copy here, or link the location of this participant’s pilot study notes
+###### Debrief 
+1. was there anything that was a surprise or did not work as intended? 
+
+2. was there any task you weren't sure if you has completed successfully?
+
+3.  were you aware of the status messages sent throughout the pilot?
+
+4. were they useful?
 
 ##### Metrics:
 *Copy here from metrics.csv, or link to the location of this participant’s pilot study log.* 

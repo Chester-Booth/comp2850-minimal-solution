@@ -63,7 +63,32 @@ class TaskStore(
      * @return List of tasks (empty if no tasks stored)
      */
     fun getAll(): List<Task> {
+
         if (!csvFile.exists() || csvFile.length() == EMPTY_FILE_SIZE) return emptyList()
+
+
+        // ensure file ends with newline to avoid malformed task lines
+        try {
+            java.io.RandomAccessFile(csvFile, "rw").use { raf ->
+
+                // goto final byte and read
+                raf.seek(csvFile.length() - 1)
+                val lastByte = raf.read()
+
+                // check for trailing newline
+                if (lastByte.toChar() != '\n') {
+                    System.err.println("Warning: CSV missing trailing newline")
+
+                    // go past final byte and write \n
+                    raf.seek(csvFile.length())
+                    raf.write('\n'.code)
+                }
+            }
+
+        } catch (e: Exception) {
+            System.err.println("Warning: could not ensure trailing newline: ${e.message}")
+        }
+
 
         return FileReader(csvFile).use { reader ->
             CSVParser(reader, CSV_FORMAT).use { parser ->

@@ -23,17 +23,18 @@ Debrief notes:
 # P1
 Session: P1 (sid=6680fa) `document.cookie = "sid=P1_6680fa; path=/";`
 Date: 2025-12-04
-Variant: Keyboard-only, JS-on
+Variant: Keyboard and mouse, JS-on
 
 | Time | Task | Observation | Tag |
 | ---- | ---- | ----------- | --- |
-|      |      |             |     |
-|      |      |             |     |
-|      |      |             |     |
-|      |      |             |     |
+| 15:  |      |             |     |
+| 15:  |      |             |     |
+| 15:  |      |             |     |
+| 15:  |      |             |     |
 
 
 Debrief notes:
+- ""
 - ""
 - ""
 - ""
